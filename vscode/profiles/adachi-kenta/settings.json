@@ -1,6 +1,40 @@
 {
+    "security.workspace.trust.untrustedFiles": "open",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.editor.enablePreview": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "ja": true
+    },
+    "workbench.startupEditor": "none",
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "scminput": true,
+        "markdown": true
+    },
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "top",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.colorTheme": "Modern Purple Theme Light",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "extensions.ignoreRecommendations": true,
+    "http.proxyStrictSSL": false,
     "[jsp]": {
         "javascript.validate.enable": false
+    },
+    "files.associations": {
+        "*.jsp": "jsp"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "cSpell.allowCompoundWords": true,
     "cSpell.dictionaries": [
@@ -25,6 +59,7 @@
         "dev",
         "env"
     ],
+    "chat.viewSessions.orientation": "stacked",
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.colorDecorators": true,
     "editor.cursorBlinking": "smooth",
@@ -85,40 +120,20 @@
     "editor.unicodeHighlight.nonBasicASCII": false,
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
-    "extensions.ignoreRecommendations": true,
-    "files.associations": {
-        "*.jsp": "jsp"
-    },
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
-    "git.autofetch": true,
     "git.ignoreRebaseWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "github.copilot.enable": {
-        "markdown": true,
-        "plaintext": true,
-        "scminput": true
-    },
-    "github.copilot.nextEditSuggestions.enabled": true,
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "jdk.telemetry.enabled": true,
     "markdown-preview-enhanced.previewTheme": "atom-light.css",
     "powershell.scriptAnalysis.onSave": true,
-    "security.workspace.trust.untrustedFiles": "open",
     "sqldeveloper.sqlHistory.historyLimit": 500,
     "sqldeveloper.telemetry.enabled": true,
     "workbench.colorCustomizations": {
         "statusBar.noFolderBackground": "#A8E6CF",
         "tab.activeBackground": "#A8E6CF"
     },
-    "workbench.colorTheme": "Modern Purple Theme Light",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.productIconTheme": "emoji-product-icons-fun",
-    "workbench.startupEditor": "none",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "chat.viewSessions.orientation": "stacked",
-    "http.proxyStrictSSL": false
+    "workbench.productIconTheme": "emoji-product-icons-fun"
 }

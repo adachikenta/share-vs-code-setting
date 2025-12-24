@@ -5,11 +5,6 @@
         "enabled": true
     },
     {
-        "id": "ankitbko.vscode-pull-request-azdo",
-        "version": "1.0.2",
-        "enabled": true
-    },
-    {
         "id": "bierner.markdown-mermaid",
         "version": "1.29.0",
         "enabled": true
@@ -57,6 +52,11 @@
     {
         "id": "eamodio.gitlens",
         "version": "17.8.1",
+        "enabled": true
+    },
+    {
+        "id": "ecmel.vscode-html-css",
+        "version": "2.0.13",
         "enabled": true
     },
     {
@@ -120,11 +120,6 @@
         "enabled": true
     },
     {
-        "id": "ms-azuretools.vscode-azureresourcegroups",
-        "version": "0.11.7",
-        "enabled": true
-    },
-    {
         "id": "ms-python.black-formatter",
         "version": "2025.2.0",
         "enabled": true
@@ -157,11 +152,6 @@
     {
         "id": "ms-python.vscode-python-envs",
         "version": "1.14.0",
-        "enabled": true
-    },
-    {
-        "id": "ms-vscode.azure-repos",
-        "version": "0.40.0",
         "enabled": true
     },
     {
@@ -265,8 +255,23 @@
         "enabled": true
     },
     {
+        "id": "xabikos.javascriptsnippets",
+        "version": "1.8.0",
+        "enabled": true
+    },
+    {
         "id": "yarimit.vscode-charcode-ext",
         "version": "0.0.3",
+        "enabled": true
+    },
+    {
+        "id": "yzhang.markdown-all-in-one",
+        "version": "3.6.3",
+        "enabled": true
+    },
+    {
+        "id": "zainchen.json",
+        "version": "2.0.2",
         "enabled": true
     }
 ]

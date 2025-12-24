@@ -1,0 +1,124 @@
+{
+    "[jsp]": {
+        "javascript.validate.enable": false
+    },
+    "cSpell.allowCompoundWords": true,
+    "cSpell.dictionaries": [
+        "powershell",
+        "sql",
+        "jsconfig",
+        "html",
+        "css",
+        "json",
+        "markdown"
+    ],
+    "cSpell.enableCompoundWords": true,
+    "cSpell.ignoreRegExpList": [
+        "/PS[a-zA-Z]+/",
+        "/venv/i",
+        "/winSCP\b*/i",
+        "pytest",
+        "schannel"
+    ],
+    "cSpell.words": [
+        "local",
+        "dev",
+        "env"
+    ],
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.colorDecorators": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 2,
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.fontWeight": "450",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.letterSpacing": 0.7,
+    "editor.lineHeight": 22,
+    "editor.renderWhitespace": "trailing",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "[Modern Purple Theme Light]": {
+            "textMateRules": [
+                {
+                    "scope": "text.markdown",
+                    "settings": {
+                        "foreground": "#AA33AA"
+                    }
+                },
+                {
+                    "scope": [
+                        "markup.fenced_code.block.markdown",
+                        "markup.inline.raw.markdown",
+                        "text.markdown meta.embedded.block",
+                        "meta.tag",
+                        "punctuation.definition.tag",
+                        "entity.name.tag",
+                        "entity.other.attribute-name",
+                        "string.quoted.double",
+                        "string.quoted.single"
+                    ],
+                    "settings": {
+                        "foreground": "#AA33AA"
+                    }
+                },
+                {
+                    "scope": "markup.table.markdown",
+                    "settings": {
+                        "foreground": "#7A5C9E"
+                    }
+                },
+                {
+                    "scope": "punctuation.separator.table.markdown",
+                    "settings": {
+                        "foreground": "#8A8AA0"
+                    }
+                }
+            ]
+        }
+    },
+    "editor.unicodeHighlight.allowedCharacters": {
+        "&nbsp;": true
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.jsp": "jsp"
+    },
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.ignoreRebaseWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true,
+        "scminput": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "jdk.telemetry.enabled": true,
+    "markdown-preview-enhanced.previewTheme": "atom-light.css",
+    "powershell.scriptAnalysis.onSave": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "sqldeveloper.sqlHistory.historyLimit": 500,
+    "sqldeveloper.telemetry.enabled": true,
+    "workbench.colorCustomizations": {
+        "statusBar.noFolderBackground": "#A8E6CF",
+        "tab.activeBackground": "#A8E6CF"
+    },
+    "workbench.colorTheme": "Modern Purple Theme Light",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "emoji-product-icons-fun",
+    "workbench.startupEditor": "none",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "chat.viewSessions.orientation": "stacked",
+    "http.proxyStrictSSL": false
+}

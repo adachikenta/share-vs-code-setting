@@ -1,0 +1,234 @@
+[
+    {
+        "id":  "aaron-bond.better-comments",
+        "explain":  "コメントを種類別に色分けして視認性を向上させる拡張機能（TODO、FIXME、!、?など）"
+    },
+    {
+        "id":  "alexcvzz.vscode-sqlite",
+        "explain":  "SQLiteデータベースファイルを開いて閲覧・編集できる拡張機能"
+    },
+    {
+        "id":  "ankitbko.vscode-pull-request-azdo",
+        "explain":  "Azure DevOpsのプルリクエストをVS Code内で作成・レビュー・管理できる拡張機能"
+    },
+    {
+        "id":  "bierner.markdown-mermaid",
+        "explain":  "Markdownファイル内でMermaid記法を使ってダイアグラム（フローチャート、シーケンス図など）を表示できる拡張機能"
+    },
+    {
+        "id":  "bracketpaircolordlw.bracket-pair-color-dlw",
+        "explain":  "括弧のペアに色を付けてコードの階層構造を視覚的にわかりやすくする拡張機能"
+    },
+    {
+        "id":  "casian.plsql",
+        "explain":  "Oracle PL/SQLの構文ハイライトとコード補完を提供する拡張機能"
+    },
+    {
+        "id":  "christian-kohler.npm-intellisense",
+        "explain":  "import文でnpmパッケージ名を自動補完してくれる拡張機能"
+    },
+    {
+        "id":  "codezombiech.gitignore",
+        "explain":  ".gitignoreファイルのテンプレートを言語やフレームワーク別に自動生成できる拡張機能"
+    },
+    {
+        "id":  "cschlosser.doxdocgen",
+        "explain":  "C/C++のコードからDoxygen形式のドキュメントコメントを自動生成する拡張機能"
+    },
+    {
+        "id":  "davidanson.vscode-markdownlint",
+        "explain":  "Markdownファイルの書式チェックとスタイルガイドに準拠しているか検証する拡張機能"
+    },
+    {
+        "id":  "dbaeumer.vscode-eslint",
+        "explain":  "JavaScriptとTypeScriptのコード品質と潜在的な問題をチェックするESLintを統合する拡張機能"
+    },
+    {
+        "id":  "donjayamanne.githistory",
+        "explain":  "Gitの履歴を視覚的に表示し、コミット履歴の検索や比較ができる拡張機能"
+    },
+    {
+        "id":  "dotjoshjohnson.xml",
+        "explain":  "XMLファイルのフォーマット、XPath評価、構文ハイライト機能を提供する拡張機能"
+    },
+    {
+        "id":  "eamodio.gitlens",
+        "explain":  "Git機能を大幅に拡張し、コードの作成者や変更履歴をインラインで表示する強力な拡張機能"
+    },
+    {
+        "id":  "emilast.logfilehighlighter",
+        "explain":  "ログファイルのエラー、警告、情報などを色分けして見やすくする拡張機能"
+    },
+    {
+        "id":  "esbenp.prettier-vscode",
+        "explain":  "JavaScript、TypeScript、CSS、HTMLなどのコードを自動的に整形するPrettierを統合する拡張機能"
+    },
+    {
+        "id":  "foxundermoon.shell-format",
+        "explain":  "シェルスクリプト（bash、PowerShellなど）のフォーマットと整形を行う拡張機能"
+    },
+    {
+        "id":  "github.copilot",
+        "explain":  "AIを活用したコード補完とコード生成を提供するGitHub Copilotの拡張機能"
+    },
+    {
+        "id":  "github.copilot-chat",
+        "explain":  "GitHub CopilotとチャットでコードやAIとの対話ができる拡張機能"
+    },
+    {
+        "id":  "github.remotehub",
+        "explain":  "GitHubリポジトリをクローンせずにブラウザ感覚で直接開いて編集できる拡張機能"
+    },
+    {
+        "id":  "j0hnmilt0n.vscode-jsp-clone",
+        "explain":  "JSP（JavaServer Pages）ファイルの構文ハイライトとサポートを提供する拡張機能"
+    },
+    {
+        "id":  "janisdd.vscode-edit-csv",
+        "explain":  "CSVファイルを表形式で編集できる拡張機能"
+    },
+    {
+        "id":  "kuscamara.yamllint-fix",
+        "explain":  "YAMLファイルの構文チェックと自動修正を提供する拡張機能"
+    },
+    {
+        "id":  "mhutchie.git-graph",
+        "explain":  "Gitのコミット履歴をグラフィカルに表示し、ブランチやマージの関係を視覚化する拡張機能"
+    },
+    {
+        "id":  "mightbesimon.emoji-icons",
+        "explain":  "ファイルとフォルダに絵文字アイコンを適用してエクスプローラーを楽しく見やすくする拡張機能"
+    },
+    {
+        "id":  "mosapride.zenkaku",
+        "explain":  "全角スペースを強調表示して視覚的にわかりやすくする拡張機能（日本語環境で便利）"
+    },
+    {
+        "id":  "ms-python.black-formatter",
+        "explain":  "PythonコードをBlackフォーマッタで自動整形する公式拡張機能"
+    },
+    {
+        "id":  "ms-python.debugpy",
+        "explain":  "Pythonのデバッグ機能を提供する公式拡張機能"
+    },
+    {
+        "id":  "ms-python.flake8",
+        "explain":  "Pythonコードのスタイルチェックと文法エラーを検出するFlake8を統合する公式拡張機能"
+    },
+    {
+        "id":  "ms-python.pylint",
+        "explain":  "Pythonコードの品質チェックとエラー検出を行うPylintを統合する公式拡張機能"
+    },
+    {
+        "id":  "ms-python.python",
+        "explain":  "Python開発のための包括的なサポートを提供するMicrosoft公式拡張機能（IntelliSense、デバッグ、Jupyter Notebookなど）"
+    },
+    {
+        "id":  "ms-python.vscode-pylance",
+        "explain":  "高速なPython言語サーバーで、型チェック、自動補完、コードナビゲーションを提供する公式拡張機能"
+    },
+    {
+        "id":  "ms-python.vscode-python-envs",
+        "explain":  "Python仮想環境の管理と切り替えをサポートする公式拡張機能"
+    },
+    {
+        "id":  "ms-vscode.azure-repos",
+        "explain":  "Azure ReposのGitリポジトリに接続してコードを管理できるMicrosoft公式拡張機能"
+    },
+    {
+        "id":  "ms-vscode.hexeditor",
+        "explain":  "バイナリファイルを16進数形式で表示・編集できるMicrosoft公式の拡張機能"
+    },
+    {
+        "id":  "ms-vscode.powershell",
+        "explain":  "PowerShellスクリプトの開発、デバッグ、実行をサポートするMicrosoft公式拡張機能"
+    },
+    {
+        "id":  "ms-vscode.remote-repositories",
+        "explain":  "リモートリポジトリをクローンせずに直接開いて編集できるMicrosoft公式拡張機能"
+    },
+    {
+        "id":  "nataliefruitema.modern-purple-theme",
+        "explain":  "モダンな紫色を基調としたダークテーマを提供する拡張機能"
+    },
+    {
+        "id":  "noxiz.jinja-snippets",
+        "explain":  "Jinjaテンプレートエンジンのコードスニペットを提供する拡張機能"
+    },
+    {
+        "id":  "oracle.oracle-java",
+        "explain":  "Java開発のための包括的なサポートを提供するOracle公式拡張機能"
+    },
+    {
+        "id":  "oracle.sql-developer",
+        "explain":  "Oracle DatabaseへのSQL実行、クエリ開発、データベース管理を提供するOracle公式拡張機能"
+    },
+    {
+        "id":  "pkief.material-icon-theme",
+        "explain":  "ファイルとフォルダにMaterial Designのアイコンを適用してエクスプローラーを見やすくする拡張機能"
+    },
+    {
+        "id":  "preetbiswas12.purple-theme-by-preet",
+        "explain":  "紫色を基調としたカスタムカラーテーマを提供する拡張機能"
+    },
+    {
+        "id":  "rechinformatica.rech-editor-batch",
+        "explain":  "Windowsバッチファイル（.bat、.cmd）の構文ハイライトと編集サポートを提供する拡張機能"
+    },
+    {
+        "id":  "samuel-weinhardt.vscode-jsp-lang",
+        "explain":  "JSPファイルの言語サポートと構文ハイライトを提供する拡張機能"
+    },
+    {
+        "id":  "samuelcolvin.jinjahtml",
+        "explain":  "Jinja2テンプレート内のHTML構文ハイライトと補完を提供する拡張機能"
+    },
+    {
+        "id":  "shd101wyy.markdown-preview-enhanced",
+        "explain":  "Markdownの高機能プレビューを提供し、PDF/HTML出力、数式、図表にも対応した拡張機能"
+    },
+    {
+        "id":  "sohamkamani.code-eol",
+        "explain":  "ファイルの改行コード（CRLF、LF）をステータスバーに表示して確認できる拡張機能"
+    },
+    {
+        "id":  "streetsidesoftware.code-spell-checker",
+        "explain":  "コード内のスペルミスをチェックして指摘する拡張機能"
+    },
+    {
+        "id":  "stylelint.vscode-stylelint",
+        "explain":  "CSS、SCSS、Lessのスタイルチェックとエラー検出を行うStylelintを統合する拡張機能"
+    },
+    {
+        "id":  "techer.open-in-browser",
+        "explain":  "HTMLファイルを右クリックからブラウザで直接開ける拡張機能"
+    },
+    {
+        "id":  "timonwong.shellcheck",
+        "explain":  "シェルスクリプトの文法チェックとベストプラクティス提案を行うShellCheckを統合する拡張機能"
+    },
+    {
+        "id":  "usernamehw.errorlens",
+        "explain":  "エラーや警告をコード内にインライン表示して、問題箇所をすぐに確認できる拡張機能"
+    },
+    {
+        "id":  "vscjava.vscode-maven",
+        "explain":  "MavenプロジェクトのビルドとタスクをVS Code内で実行できる拡張機能"
+    },
+    {
+        "id":  "waseemakram.jinja-snippets-flask",
+        "explain":  "Flask向けのJinjaテンプレートスニペットを提供する拡張機能"
+    },
+    {
+        "id":  "wekex.jsonlint",
+        "explain":  "JSONファイルの構文チェックとバリデーションを行う拡張機能"
+    },
+    {
+        "id":  "wholroyd.jinja",
+        "explain":  "Jinjaテンプレート言語の構文ハイライトとサポートを提供する拡張機能"
+    },
+    {
+        "id":  "yarimit.vscode-charcode-ext",
+        "explain":  "選択した文字のUnicodeコードポイントや文字コード情報を表示する拡張機能"
+    }
+]

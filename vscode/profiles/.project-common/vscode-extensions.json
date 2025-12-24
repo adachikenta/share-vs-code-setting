@@ -1,0 +1,102 @@
+[
+    {
+        "id":  "dbaeumer.vscode-eslint",
+        "version":  "3.0.16",
+        "enabled":  true
+    },
+    {
+        "id":  "donjayamanne.githistory",
+        "version":  "0.6.20",
+        "enabled":  true
+    },
+    {
+        "id":  "dotjoshjohnson.xml",
+        "version":  "2.5.1",
+        "enabled":  true
+    },
+    {
+        "id":  "eamodio.gitlens",
+        "version":  "17.7.1",
+        "enabled":  true
+    },
+    {
+        "id":  "esbenp.prettier-vscode",
+        "version":  "11.0.0",
+        "enabled":  true
+    },
+    {
+        "id":  "j0hnmilt0n.vscode-jsp-clone",
+        "version":  "0.0.6",
+        "enabled":  true
+    },
+    {
+        "id":  "janisdd.vscode-edit-csv",
+        "version":  "0.11.8",
+        "enabled":  true
+    },
+    {
+        "id":  "kuscamara.yamllint-fix",
+        "version":  "1.1.0",
+        "enabled":  true
+    },
+    {
+        "id":  "mhutchie.git-graph",
+        "version":  "1.30.0",
+        "enabled":  true
+    },
+    {
+        "id":  "mosapride.zenkaku",
+        "version":  "0.0.3",
+        "enabled":  true
+    },
+    {
+        "id":  "pkief.material-icon-theme",
+        "version":  "5.29.0",
+        "enabled":  true
+    },
+    {
+        "id":  "samuel-weinhardt.vscode-jsp-lang",
+        "version":  "0.1.9",
+        "enabled":  true
+    },
+    {
+        "id":  "shd101wyy.markdown-preview-enhanced",
+        "version":  "0.8.20",
+        "enabled":  true
+    },
+    {
+        "id":  "sohamkamani.code-eol",
+        "version":  "0.3.3",
+        "enabled":  true
+    },
+    {
+        "id":  "streetsidesoftware.code-spell-checker",
+        "version":  "4.3.2",
+        "enabled":  true
+    },
+    {
+        "id":  "stylelint.vscode-stylelint",
+        "version":  "1.5.3",
+        "enabled":  true
+    },
+    {
+        "id":  "usernamehw.errorlens",
+        "version":  "3.26.0",
+        "enabled":  true
+    },
+    {
+        "id":  "vscjava.vscode-maven",
+        "version":  "0.45.0",
+        "enabled":  true
+    },
+    {
+        "id":  "wekex.jsonlint",
+        "version":  "0.0.7",
+        "enabled":  true
+    },
+    {
+        "id":  "yarimit.vscode-charcode-ext",
+        "version":  "0.0.3",
+        "enabled":  true
+    }
+]

@@ -1,0 +1,272 @@
+[
+    {
+        "id": "aaron-bond.better-comments",
+        "version": "3.0.2",
+        "enabled": true
+    },
+    {
+        "id": "ankitbko.vscode-pull-request-azdo",
+        "version": "1.0.2",
+        "enabled": true
+    },
+    {
+        "id": "bierner.markdown-mermaid",
+        "version": "1.29.0",
+        "enabled": true
+    },
+    {
+        "id": "bracketpaircolordlw.bracket-pair-color-dlw",
+        "version": "0.0.6",
+        "enabled": true
+    },
+    {
+        "id": "christian-kohler.npm-intellisense",
+        "version": "1.4.5",
+        "enabled": true
+    },
+    {
+        "id": "codezombiech.gitignore",
+        "version": "0.10.0",
+        "enabled": true
+    },
+    {
+        "id": "cschlosser.doxdocgen",
+        "version": "1.4.0",
+        "enabled": true
+    },
+    {
+        "id": "davidanson.vscode-markdownlint",
+        "version": "0.61.1",
+        "enabled": true
+    },
+    {
+        "id": "dbaeumer.vscode-eslint",
+        "version": "3.0.20",
+        "enabled": true
+    },
+    {
+        "id": "donjayamanne.githistory",
+        "version": "0.6.20",
+        "enabled": true
+    },
+    {
+        "id": "dotjoshjohnson.xml",
+        "version": "2.5.1",
+        "enabled": true
+    },
+    {
+        "id": "eamodio.gitlens",
+        "version": "17.8.1",
+        "enabled": true
+    },
+    {
+        "id": "emilast.logfilehighlighter",
+        "version": "3.4.5",
+        "enabled": true
+    },
+    {
+        "id": "esbenp.prettier-vscode",
+        "version": "11.0.2",
+        "enabled": true
+    },
+    {
+        "id": "foxundermoon.shell-format",
+        "version": "7.2.8",
+        "enabled": true
+    },
+    {
+        "id": "github.copilot",
+        "version": "1.388.0",
+        "enabled": true
+    },
+    {
+        "id": "github.copilot-chat",
+        "version": "0.35.2",
+        "enabled": true
+    },
+    {
+        "id": "github.remotehub",
+        "version": "0.64.0",
+        "enabled": true
+    },
+    {
+        "id": "j0hnmilt0n.vscode-jsp-clone",
+        "version": "0.0.6",
+        "enabled": true
+    },
+    {
+        "id": "janisdd.vscode-edit-csv",
+        "version": "0.11.8",
+        "enabled": true
+    },
+    {
+        "id": "kuscamara.yamllint-fix",
+        "version": "1.1.0",
+        "enabled": true
+    },
+    {
+        "id": "mhutchie.git-graph",
+        "version": "1.30.0",
+        "enabled": true
+    },
+    {
+        "id": "mightbesimon.emoji-icons",
+        "version": "1.6.1",
+        "enabled": true
+    },
+    {
+        "id": "mosapride.zenkaku",
+        "version": "0.0.3",
+        "enabled": true
+    },
+    {
+        "id": "ms-azuretools.vscode-azureresourcegroups",
+        "version": "0.11.7",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.black-formatter",
+        "version": "2025.2.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.debugpy",
+        "version": "2025.18.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.flake8",
+        "version": "2025.2.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.pylint",
+        "version": "2025.2.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.python",
+        "version": "2025.20.1",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.vscode-pylance",
+        "version": "2025.10.4",
+        "enabled": true
+    },
+    {
+        "id": "ms-python.vscode-python-envs",
+        "version": "1.14.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-vscode.azure-repos",
+        "version": "0.40.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-vscode.hexeditor",
+        "version": "1.11.1",
+        "enabled": true
+    },
+    {
+        "id": "ms-vscode.powershell",
+        "version": "2025.4.0",
+        "enabled": true
+    },
+    {
+        "id": "ms-vscode.remote-repositories",
+        "version": "0.42.0",
+        "enabled": true
+    },
+    {
+        "id": "nataliefruitema.modern-purple-theme",
+        "version": "0.0.7",
+        "enabled": true
+    },
+    {
+        "id": "noxiz.jinja-snippets",
+        "version": "1.0.0",
+        "enabled": true
+    },
+    {
+        "id": "pkief.material-icon-theme",
+        "version": "5.30.0",
+        "enabled": true
+    },
+    {
+        "id": "preetbiswas12.purple-theme-by-preet",
+        "version": "0.0.2",
+        "enabled": true
+    },
+    {
+        "id": "rechinformatica.rech-editor-batch",
+        "version": "0.0.22",
+        "enabled": true
+    },
+    {
+        "id": "samuel-weinhardt.vscode-jsp-lang",
+        "version": "0.1.9",
+        "enabled": true
+    },
+    {
+        "id": "samuelcolvin.jinjahtml",
+        "version": "0.20.0",
+        "enabled": true
+    },
+    {
+        "id": "shd101wyy.markdown-preview-enhanced",
+        "version": "0.8.20",
+        "enabled": true
+    },
+    {
+        "id": "sohamkamani.code-eol",
+        "version": "0.3.3",
+        "enabled": true
+    },
+    {
+        "id": "streetsidesoftware.code-spell-checker",
+        "version": "4.4.0",
+        "enabled": true
+    },
+    {
+        "id": "stylelint.vscode-stylelint",
+        "version": "1.6.0",
+        "enabled": true
+    },
+    {
+        "id": "timonwong.shellcheck",
+        "version": "0.38.5",
+        "enabled": true
+    },
+    {
+        "id": "usernamehw.errorlens",
+        "version": "3.26.0",
+        "enabled": true
+    },
+    {
+        "id": "vscjava.vscode-maven",
+        "version": "0.45.1",
+        "enabled": true
+    },
+    {
+        "id": "waseemakram.jinja-snippets-flask",
+        "version": "1.0.4",
+        "enabled": true
+    },
+    {
+        "id": "wekex.jsonlint",
+        "version": "0.0.7",
+        "enabled": true
+    },
+    {
+        "id": "wholroyd.jinja",
+        "version": "0.0.8",
+        "enabled": true
+    },
+    {
+        "id": "yarimit.vscode-charcode-ext",
+        "version": "0.0.3",
+        "enabled": true
+    }
+]

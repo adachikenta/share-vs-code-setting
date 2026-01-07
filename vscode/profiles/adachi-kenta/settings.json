@@ -50,6 +50,15 @@
     "cSpell.ignoreRegExpList": [
         "/PS[a-zA-Z]+/",
         "/venv/i",
+        "/msys/i",
+        "/gantt/i",
+        "/tera/i",
+        "/plotly/i",
+        "/FOSSID/i",
+        "/Cppcheck/i",
+        "/pyserial/i",
+        "/RVCT/i",
+        "/Coverity/i",
         "/winSCP\b*/i",
         "pytest",
         "schannel"
@@ -134,6 +143,10 @@
     "workbench.colorCustomizations": {
         "statusBar.noFolderBackground": "#A8E6CF",
         "tab.activeBackground": "#A8E6CF"
+    },
+    "markdownlint.config": {
+        "MD024": false,
+        "MD036": false
     },
     "workbench.productIconTheme": "emoji-product-icons-fun"
 }

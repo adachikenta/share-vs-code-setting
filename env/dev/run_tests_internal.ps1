@@ -11,7 +11,6 @@ if ($LASTEXITCODE -ne 0) {
 
 # Run the tests with coverage
 try {
-
     Write-Host "Running tests with coverage..." -ForegroundColor Yellow
     pytest -v -s --html=$reportPath --cov=. --cov-config=pytest.ini --cov-report=$CoverageFormat
     $testResult = $LASTEXITCODE

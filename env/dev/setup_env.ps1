@@ -67,8 +67,19 @@ if (Get-Command scoop -ErrorAction SilentlyContinue) {
     # install scoop
     Write-Host "scoop is not installed. Installing scoop..." -ForegroundColor Yellow
     try {
-        Invoke-Expression "& {$(Invoke-RestMethod get.scoop.sh)} -RunAsAdmin"
+        Invoke-Expression "& {$(Invoke-RestMethod get.scoop.sh)}"
         Write-Host "scoop installed successfully." -ForegroundColor Green
+
+        # Reload environment variables to make scoop available in current session
+        Write-Host "Reloading environment variables..." -ForegroundColor Yellow
+        $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+        # Verify scoop is now available
+        if (Get-Command scoop -ErrorAction SilentlyContinue) {
+            Write-Host "scoop is now available in current session." -ForegroundColor Green
+        } else {
+            Write-Host "Warning: scoop installed but not found in PATH. You may need to restart the terminal." -ForegroundColor Yellow
+        }
     }
     catch {
         Write-Host "Failed to install scoop: $_" -ForegroundColor Red
@@ -84,34 +95,64 @@ if (-not $gitInstalled) {
     exit 1
 }
 
-# check sslbackend of git
+# Configure git settings
+Write-Host "Configuring git settings..." -ForegroundColor Yellow
 try {
-    $gitConfig = & $scoopgit config --global -l 2>&1
-    if ($gitConfig -match "http.sslbackend=schannel") {
-        Write-Host "git sslbackend is already set to schannel." -ForegroundColor Green
-    } else {
-        Write-Host "Setting git sslbackend to schannel..." -ForegroundColor Yellow
-        & $scoopgit config --global http.sslbackend schannel
-        Write-Host "git sslbackend set to schannel successfully." -ForegroundColor Green
+    # Create .gitconfig if it doesn't exist
+    $gitConfigPath = "$env:USERPROFILE\.gitconfig"
+    if (-not (Test-Path $gitConfigPath)) {
+        Write-Host ".gitconfig not found. Creating..." -ForegroundColor Yellow
+        New-Item -Path $gitConfigPath -ItemType File -Force | Out-Null
     }
+
+    # Set schannel for SSL backend
+    & $scoopgit config --global http.sslbackend schannel 2>&1 | Out-Null
+    Write-Host "git sslbackend set to schannel." -ForegroundColor Green
+
+    # Disable SSL revocation check to avoid CRYPT_E_NO_REVOCATION_CHECK error
+    & $scoopgit config --global http.schannelCheckRevoke false 2>&1 | Out-Null
+    Write-Host "git SSL revocation check disabled." -ForegroundColor Green
 }
 catch {
-    Write-Host "Warning: Could not configure git sslbackend: $_" -ForegroundColor Yellow
+    Write-Host "Warning: Could not configure git settings: $_" -ForegroundColor Yellow
+    Write-Host "Attempting to continue anyway..." -ForegroundColor Yellow
 }
 
 # check versions bucket
-try {
-    $buckets = scoop bucket list 2>&1 | Out-String
-    if ($buckets -match "versions") {
-        Write-Host "versions bucket is already added." -ForegroundColor Green
-    } else {
-        Write-Host "Adding versions bucket..." -ForegroundColor Yellow
-        scoop bucket add versions
+Write-Host "Checking versions bucket..." -ForegroundColor Yellow
+$previousErrorAction = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
+$buckets = scoop bucket list 2>&1 | Out-String
+$ErrorActionPreference = $previousErrorAction
+
+if ($buckets -match "versions") {
+    Write-Host "versions bucket is already added." -ForegroundColor Green
+} else {
+    Write-Host "Adding versions bucket..." -ForegroundColor Yellow
+    try {
+        $addBucketOutput = scoop bucket add versions 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            throw "Failed to add versions bucket. Exit code: $LASTEXITCODE`nOutput: $addBucketOutput"
+        }
+
+        # Verify the bucket was added
+        Start-Sleep -Seconds 2
+        $ErrorActionPreference = "Continue"
+        $bucketsAfter = scoop bucket list 2>&1 | Out-String
+        $ErrorActionPreference = "Stop"
+
+        if ($bucketsAfter -notmatch "versions") {
+            throw "versions bucket was not found after installation"
+        }
+
         Write-Host "versions bucket added successfully." -ForegroundColor Green
     }
-}
-catch {
-    Write-Host "Warning: Could not add versions bucket: $_" -ForegroundColor Yellow
+    catch {
+        Write-Host "Error: Could not add versions bucket: $_" -ForegroundColor Red
+        Write-Host "The versions bucket is required to install $pythonVersion" -ForegroundColor Red
+        Write-Host "Please check your network connection and proxy settings." -ForegroundColor Yellow
+        exit 1
+    }
 }
 
 # check if python of scoop is installed

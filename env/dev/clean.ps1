@@ -1,4 +1,35 @@
 $ErrorActionPreference = "Stop"
+
+# Function to find git executable
+function Get-GitExecutable {
+    # Check for Scoop-installed git
+    $scoopGitPaths = @(
+        "$env:USERPROFILE\scoop\shims\git.exe",
+        "$env:USERPROFILE\scoop\apps\git\current\bin\git.exe",
+        "$env:SCOOP\shims\git.exe",
+        "$env:SCOOP\apps\git\current\bin\git.exe"
+    )
+
+    foreach ($path in $scoopGitPaths) {
+        if (Test-Path $path) {
+            Write-Host "Found git at $path via Scoop." -ForegroundColor Green
+            # git version
+            $version = & $path --version 2>&1
+            Write-Host $version -ForegroundColor Cyan
+            return $path
+        }
+    }
+
+    return $null
+}
+
+# Get git executable path
+$git = Get-GitExecutable
+if (-not $git) {
+    Write-Host "Warning: Git not found in PATH or Scoop installation." -ForegroundColor Yellow
+    Write-Host "Git-related operations will be skipped." -ForegroundColor Yellow
+}
+
 $venvPath = ".\venv"
 if (Test-Path $venvPath) {
     $absoluteVenvPath = (Resolve-Path -Path $venvPath -ErrorAction SilentlyContinue).Path
@@ -23,16 +54,16 @@ if (Test-Path $venvPath) {
 }
 # Check if git repository exists
 $gitPath = ".\.git"
-if (-not (Test-Path $gitPath)) {
+if ($git -and -not (Test-Path $gitPath)) {
     Write-Host "Git repository not found. Initializing git repository with 'develop' branch..." -ForegroundColor Yellow
     try {
         # Initialize git repository
-        git init
+        & $git init
         if ($LASTEXITCODE -eq 0) {
             Write-Host "Git repository initialized successfully." -ForegroundColor Green
 
             # Create and checkout develop branch
-            git checkout -b develop
+            & $git checkout -b develop
             if ($LASTEXITCODE -eq 0) {
                 Write-Host "Created and switched to 'develop' branch." -ForegroundColor Green
             } else {
@@ -47,13 +78,13 @@ if (-not (Test-Path $gitPath)) {
 }
 
 $gitignorePath = ".\.gitignore"
-if (Test-Path $gitignorePath) {
+if ($git -and (Test-Path $gitignorePath)) {
     # Check if in a git repository
-    git rev-parse --git-dir 2>&1 | Out-Null
+    & $git rev-parse --git-dir 2>&1 | Out-Null
     if ($LASTEXITCODE -eq 0) {
         try {
             Write-Host "Removing files ignored by .gitignore..." -ForegroundColor Yellow
-            git clean -fdX
+            & $git clean -fdX
             if ($LASTEXITCODE -eq 0) {
                 Write-Host "Ignored files removed successfully." -ForegroundColor Green
             } else {
@@ -66,6 +97,10 @@ if (Test-Path $gitignorePath) {
         Write-Host "Not in a git repository. Skipping git clean." -ForegroundColor Yellow
     }
 } else {
-    Write-Host ".gitignore file not found at $gitignorePath" -ForegroundColor Yellow
-    Write-Host "Skipping git clean operation." -ForegroundColor Yellow
+    if (-not $git) {
+        Write-Host "Git not available. Skipping git clean operation." -ForegroundColor Yellow
+    } elseif (-not (Test-Path $gitignorePath)) {
+        Write-Host ".gitignore file not found at $gitignorePath" -ForegroundColor Yellow
+        Write-Host "Skipping git clean operation." -ForegroundColor Yellow
+    }
 }
